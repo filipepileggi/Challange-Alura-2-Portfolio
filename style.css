@@ -1,0 +1,114 @@
+/* style.css */
+
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilos Globais */
+body {
+    font-family:system-ui;
+    line-height: 1.6;
+}
+
+/* Estilos Globais */
+.flex {
+    display: flex; /* Ativa o Flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+
+/* Estilos do Cabeçalho */
+header {
+    background-color: #ffffff;
+    color: #070707;
+    padding: 20px 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: #000000;
+    font-family:system-ui;
+}
+/* Estilos Específicos para os Links do Menu */
+header nav ul li {
+    display: inline;
+    margin-right: 20px; /* Espaçamento entre os links */ 
+}
+
+/* Estilos Específicos para os Links do Menu */
+header nav ul li a {
+    color: #000000; /* Cor preta */
+    margin-right: 20px; /* Espaçamento entre os links */
+}
+
+
+/* Estilos para o último item da lista de links */
+header nav ul li:last-child {
+    margin-right: 0; /* Remove a margem direita do último item */
+}
+
+/* Estilos para o cabeçalho "Meu Portfólio" */
+header h1 {
+    margin-right: auto; /* Move o cabeçalho para o canto esquerdo */
+}
+
+.text-container h1 {
+    font-size: 52px;
+}
+
+
+/* Estilos das Seções */
+section {
+    padding: 40px 0;
+    width: 1136px;
+    height: 368px;
+}
+
+/* Estilos para o Contêiner do Texto */
+.text-container {
+    width: 75%;
+    float: left; /* Alinha o contêiner de texto à esquerda */
+}
+
+/* Estilos para o Contêiner da Imagem */
+.image-container {
+    width: 250px; /* Largura fixa para o contêiner */
+    height: 250px; /* Altura fixa para o contêiner */
+    overflow: hidden; /* Oculta qualquer parte da imagem que ultrapassar os limites do contêiner */
+    border-radius: 50%; /* Deixa o contêiner redondo */
+    display: flex; /* Ativa o Flexbox para centralizar verticalmente a imagem */
+    justify-content: center; /* Centraliza horizontalmente a imagem */
+    align-items: center; /* Centraliza verticalmente a imagem */
+    float: right;
+}
+
+/* Estilos para a Imagem de Perfil */
+.image-container img {
+    width: 180%; /* Ajuste o valor conforme necessário para manter a proporção da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem e preenche o contêiner */
+    object-position: center; /* Centraliza a imagem no contêiner */
+    border-radius: 50%; /* Deixa a imagem redonda */
+}
+
+
+
+/* Restante do seu CSS aqui... */
+
+.skill-icon {
+    width: 100px; /* Define a largura do ícone */
+    height: auto; /* Mantém a proporção */
+    margin-right: 8px; /* Adiciona espaçamento entre o ícone e o texto */
+    align-items: left;
+    display: flex;
+    justify-content: center; /* Alinha os itens horizontalmente */
+    
+}
+
