@@ -1,0 +1,275 @@
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    font-family: Raleway;
+    color: #464646;
+    margin: 0%;
+    height: 5000px;
+}
+
+header {
+    height: 88px;
+    display: flex;
+    align-items: center;
+    gap: 600px;
+}
+
+.name__button {
+    background: none;
+    border: none;
+    padding: 0;            
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    cursor: pointer;
+    outline: none; 
+}
+
+.buttons__container button{
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    cursor: pointer;
+    outline: none; 
+}
+
+.buttons__container{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+
+.presentation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.presentation__text{
+    width: 751px;
+    height: 246px;
+    padding-right: 30px;
+}
+
+.presentation__text h1{
+    font-size: 52px;
+}
+
+.presentation__text a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #464646;
+}
+
+.presentation__buttons__container{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.presentation__text button{
+    background: none;
+    border: none;
+    padding: 0;            
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+.presentation__photo {
+    width: 368px;
+    height: 368px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.presentation__photo img{
+    border-radius: 50%;
+    width: 300px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: flex;
+}
+
+.aboutme{
+    width: 100%;
+    height: 383px;
+    background-color: #EAF2FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme__container{
+    width: 1136px;
+    height: 350px;
+}
+
+.aboutme__container p{
+    width: 751px;
+    height: 133px;
+}
+
+.skills__hobbies{
+    width: 100%;
+    height: 368px;
+    padding-top: 20px;
+    padding-bottom: 250px;
+    font-size: 20px;
+}
+
+.skills__area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hobbies__area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.academic__education{
+    width: 100%;
+    height: 581px; 
+    background-color: #EAF2FD;
+    font-size: 20px;
+}
+
+.academic__area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.professional__experience{
+    width: 1440px;
+    height: 1932px;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.professional__area{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.contact{
+    width: 100%;
+    height: 788px;
+    background-color: #EAF2FD;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact__container{
+    width: 656px;
+    height: 596px;
+}
+
+.contact__container h1{
+    font-size: 32px;
+    margin:0%;
+}
+
+.contact__container p{
+    font-size: 16px;
+}
+
+.form-control{
+    width: 100%;
+    height: 56px;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.form-group textarea{
+    width: 656px;
+    height: 133px;
+    font-family: Raleway;
+}
+
+.form-control:valid,
+textarea.form-control:valid {
+    background-color: #EAF2FD;
+    outline: 1px solid #2A7AE4;
+    border: none;
+    color: #2A7AE4;
+
+}
+
+input[name="name"]:valid,  
+input[name="email"]:valid,
+input[name="assunto"]:valid,
+textarea[name="message"]:valid {
+    color: #000000;
+}
+
+input[name="name"]:focus,
+input[name="email"]:focus,
+input[name="assunto"]:focus,
+textarea[name="message"]:focus {
+    color: #000;
+    border: none;
+    outline: 1px solid #000000;
+    box-shadow: 0px 5px 10px -5px #2A7AE4(0, 0, 0, 0.5);
+}
+
+.send-button{
+    width: 165px;
+    height: 51px;
+    color: white;
+    background-color: #2A7AE4;
+    border: none;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
+
+}
+
+/* Estilo para o botão "Enviar" ao passar com o mouse por cima */
+.send-button:hover {
+    background-color: #1963aa; /* Cor de fundo mais escura ao passar o mouse */
+    cursor: pointer; /* Cursor muda para "mãozinha" */
+
+}
+
+/* Estilo para o botão quando clicar */
+.send-button:active {
+    background-color: #124a78;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    height: 150px;
+}
